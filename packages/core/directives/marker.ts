@@ -3,11 +3,11 @@ import { Observable, ReplaySubject, Subscription } from 'rxjs';
 import { tap } from 'rxjs/operators';
 import { MarkerLabel, MouseEvent } from '../map-types';
 import { FitBoundsAccessor, FitBoundsDetails } from '../services/fit-bounds';
-import * as mapTypes from '../services/google-maps-types';
 import { MarkerManager } from '../services/managers/marker-manager';
 import { AgmInfoWindow } from './info-window';
+import * as mapTypes from '../services/google-maps-types';
 
-let markerId = 0;
+const markerId = 0;
 
 /**
  * AgmMarker renders a map marker inside a {@link AgmMap}.
@@ -41,7 +41,7 @@ let markerId = 0;
     'latitude', 'longitude', 'title', 'label', 'draggable: markerDraggable', 'iconUrl',
     'openInfoWindow', 'opacity', 'visible', 'zIndex', 'animation'
   ],
-  outputs: ['markerClick', 'dragEnd','dragStart','drag', 'mouseOver', 'mouseOut']
+  outputs: ['markerClick', 'dragEnd', 'dragStart', 'drag', 'mouseOver', 'mouseOut']
 })
 export class AgmMarker implements OnDestroy, OnChanges, AfterContentInit, FitBoundsAccessor {
   /**
@@ -145,9 +145,7 @@ export class AgmMarker implements OnDestroy, OnChanges, AfterContentInit, FitBou
    */
   @Output() mouseOut: EventEmitter<MouseEvent> = new EventEmitter<MouseEvent>();
 
-  /**
-   * @internal
-   */
+  /** @internal */
   @ContentChildren(AgmInfoWindow) infoWindow: QueryList<AgmInfoWindow> = new QueryList<AgmInfoWindow>();
 
   private _markerAddedToManger: boolean = false;
@@ -158,7 +156,7 @@ export class AgmMarker implements OnDestroy, OnChanges, AfterContentInit, FitBou
 
   constructor(private _markerManager: MarkerManager) { this._id = (markerId++).toString(); }
 
-  /* @internal */
+  /** @internal */
   ngAfterContentInit() {
     this.handleInfoWindowUpdate();
     this.infoWindow.changes.subscribe(() => this.handleInfoWindowUpdate());
@@ -295,6 +293,6 @@ export class AgmMarker implements OnDestroy, OnChanges, AfterContentInit, FitBou
   ngOnDestroy() {
     this._markerManager.deleteMarker(this);
     // unsubscribe all registered observable subscriptions
-    this._observableSubscriptions.forEach((s) => s.unsubscribe());
+    this._observableSubscriptions.forEach(s => s.unsubscribe());
   }
 }
