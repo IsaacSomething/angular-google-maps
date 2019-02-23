@@ -2,10 +2,10 @@ import { AfterContentInit, ContentChildren, Directive, EventEmitter, Input, OnCh
 import { Observable, ReplaySubject, Subscription } from 'rxjs';
 import { tap } from 'rxjs/operators';
 import { MarkerLabel, MouseEvent } from '../map-types';
+import * as mapTypes from '../services/google-maps-types';
 import { FitBoundsAccessor, FitBoundsDetails } from '../services/fit-bounds';
 import { MarkerManager } from '../services/managers/marker-manager';
 import { AgmInfoWindow } from './info-window';
-import * as mapTypes from '../services/google-maps-types';
 
 const markerId = 0;
 
@@ -41,7 +41,7 @@ const markerId = 0;
     'latitude', 'longitude', 'title', 'label', 'draggable: markerDraggable', 'iconUrl',
     'openInfoWindow', 'opacity', 'visible', 'zIndex', 'animation'
   ],
-  outputs: ['markerClick', 'dragEnd', 'dragStart', 'drag', 'mouseOver', 'mouseOut']
+  outputs: ['markerClick', 'dragStart', 'drag', 'dragEnd', 'mouseOver', 'mouseOut']
 })
 export class AgmMarker implements OnDestroy, OnChanges, AfterContentInit, FitBoundsAccessor {
   /**
@@ -222,9 +222,7 @@ export class AgmMarker implements OnDestroy, OnChanges, AfterContentInit, FitBou
     }
   }
 
-  /**
-   * @internal
-   */
+  /** @internal */
   getFitBoundsDetails$(): Observable<FitBoundsDetails> {
     return this._fitBoundsDetails$.asObservable();
   }
