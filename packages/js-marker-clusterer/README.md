@@ -7,12 +7,12 @@ this package levereges the [js-marker-clusterer][js-marker-clusterer] to add clu
 
 ## Installation
 
-@agm_preview/js-marker-clusterer has a peer depedency on [js-marker-clusterer][js-marker-clusterer]
+@agm-preview/js-marker-clusterer has a peer depedency on [js-marker-clusterer][js-marker-clusterer]
 
 ```shell
-npm install js-marker-clusterer @agm_preview/js-marker-clusterer --save
+npm install js-marker-clusterer @agm-preview/js-marker-clusterer --save
 # or
-yarn add js-marker-clusterer @agm_preview/js-marker-clusterer
+yarn add js-marker-clusterer @agm-preview/js-marker-clusterer
 ```
 
 ## Usage
@@ -25,8 +25,8 @@ yarn add js-marker-clusterer @agm_preview/js-marker-clusterer
     import { AppComponent } from './app.component';
 
     // add these imports
-    import { AgmCoreModule } from '@agm_preview/core';
-    import { AgmJsMarkerClustererModule } from '@agm_preview/js-marker-clusterer';
+    import { AgmCoreModule } from '@agm-preview/core';
+    import { AgmJsMarkerClustererModule } from '@agm-preview/js-marker-clusterer';
 
     @NgModule({
       declarations: [

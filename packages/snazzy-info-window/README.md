@@ -1,7 +1,7 @@
 Angular Google Maps (AGM) Core - Angular 2+ Google Maps components
 =========
 
-@agm_preview/snazzy-info-window is an extension for the @agm_preview/core package that provides solutions for styleable/customizable info windows with the help of ['Snazzy Info Window'](https://github.com/atmist/snazzy-info-window).
+@agm-preview/snazzy-info-window is an extension for the @agm-preview/core package that provides solutions for styleable/customizable info windows with the help of ['Snazzy Info Window'](https://github.com/atmist/snazzy-info-window).
 
 The sources for this package are in the [angular-google-maps](https://github.com/agm-preview/angular-google-maps) repository. Please file issues and pull requests against that repo.
 

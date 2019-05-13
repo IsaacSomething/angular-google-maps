@@ -19,7 +19,7 @@
             "jasmine"
         ],
         "paths": {
-            "@agm_preview/*": ["../packages/*"]
+            "@agm-preview/*": ["../packages/*"]
         }
     }
 }
