@@ -1,3 +1,16 @@
+<a name="1.0.0-beta.7"></a>
+# [1.0.0-beta.7](https://github.com/agm-preview/angular-google-maps/compare/1.0.0-beta.6...1.0.0-beta.7)
+
+### BREAKING CHANGES
+
+Due to the original maintainer, @SebastianM quiet abandoment of the project, a few fans and avid users of agm have forked the repository, so we can add different features,
+merge PRs, keep in sync with angular versions, fix bugs, and improve test coverage.
+
+We sincerely hope that @SebastianM will come back soon, then we'll merge all our work into his repo, and close this down. Otherwise, you can use our npm org,
+[agm-preview](https://www.npmjs.com/org/agm-preview) for more updated angular google maps.
+
+To start using updated google maps, change your package names to @agm-preview/core, @agm-preview/js-marker-clusterer, and @agm-preview/snazzy-info-window.
+
 <a name="1.0.0-beta.6"></a>
 # [1.0.0-beta.6](https://github.com/SebastianM/angular-google-maps/compare/1.0.0-beta.5...1.0.0-beta.6) (2018-11-13)
 
