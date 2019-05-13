@@ -1,4 +1,4 @@
-import {Marker, GoogleMap, LatLngBounds} from '@agm_preview/core/services/google-maps-types';
+import {Marker, GoogleMap, LatLngBounds} from '@agm-preview/core/services/google-maps-types';
 
 export interface CalculatorResult {
   text: string;

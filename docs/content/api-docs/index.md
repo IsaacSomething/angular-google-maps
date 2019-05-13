@@ -6,9 +6,9 @@ title = "API Docs for Angular Google Maps"
 
 **Here you find the API docs for the @agm Packages:**
 
-* [@agm_preview/core](https://angular-maps.com/api-docs/agm-core/modules/AgmCoreModule.html)  
+* [@agm-preview/core](https://angular-maps.com/api-docs/agm-core/modules/AgmCoreModule.html)
   Provides Angular integration solutions for the official Google Maps Core API v3
-* [@agm_preview/snazzy-info-window](https://angular-maps.com/api-docs/agm-snazzy-info-window/modules/AgmSnazzyInfoWindowModule.html)  
+* [@agm-preview/snazzy-info-window](https://angular-maps.com/api-docs/agm-snazzy-info-window/modules/AgmSnazzyInfoWindowModule.html)
   Styled Info Windows with [Snazzy Info Window](https://github.com/atmist/snazzy-info-window)
-* [@agm_preview/js-marker-clusterer](https://angular-maps.com/api-docs/js-marker-clusterer/modules/AgmJsMarkerClustererModule.html)  
+* [@agm-preview/js-marker-clusterer](https://angular-maps.com/api-docs/js-marker-clusterer/modules/AgmJsMarkerClustererModule.html)
   Clustered markers with [googlemaps/js-marker-clusterer](https://github.com/googlemaps/js-marker-clusterer)
