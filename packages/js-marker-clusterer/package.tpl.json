@@ -1,11 +1,11 @@
 {
-  "name": "@agm/js-marker-clusterer",
+  "name": "@agm_preview/js-marker-clusterer",
   "version": "INSERT_HERE_VIA_BUILD_PROCESS",
   "private": true,
   "description": "Angular Google Maps (AGM) extension for js-marker-clusterer support",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SebastianM/angular-google-maps.git"
+    "url": "git+https://github.com/agm-preview/angular-google-maps.git"
   },
   "keywords": [
     "angular-google-maps",
@@ -17,12 +17,12 @@
   "author": "Jens Fahnenbruck <jigfox@me.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SebastianM/angular-google-maps/issues"
+    "url": "https://github.com/agm-preview/angular-google-maps/issues"
   },
   "peerDependencies": {
-    "@angular/core": "^5.0.0 || ^6.0.0",
-    "@agm/core": "^1.0.0-beta.3",
+    "@angular/core": "^6.0.0 || ^7.0.0",
+    "@agm_preview/core": "^1.0.0-beta.6",
     "js-marker-clusterer": "^1.0.0"
   },
-  "homepage": "https://github.com/SebastianM/angular-google-maps#readme"
+  "homepage": "https://github.com/agm-preview/angular-google-maps#readme"
 }

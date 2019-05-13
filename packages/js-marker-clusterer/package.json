@@ -1,6 +1,6 @@
 {
-  "name": "@agm/clusterer-src",
+  "name": "@agm_preview/clusterer-src",
   "dependencies": {
-    "@agm/core": "file:../core"
+    "@agm_preview/core": "file:../core"
   }
 }
